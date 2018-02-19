@@ -1,0 +1,22 @@
+{
+  "name": "<% @projectName %>",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha *.spec.js",
+    "lint": "./node_modules/eslint/bin/eslint.js --ignore-pattern '*.spec.js' *.js",
+    "lint-test": "./node_modules/eslint/bin/eslint.js --env=mocha *.spec.js"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^4.9.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0",
+    "mocha": "^4.0.1"
+  }
+}
