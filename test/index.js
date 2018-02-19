@@ -43,13 +43,13 @@ describe('Lambda boilerplate', () => {
       'project-name': 'toto',
     });
 
-    stubEctRender =  sinon.stub().returns('toto toto toto');
+    stubEctRender = sinon.stub().returns('toto toto toto');
     stubEct = sinon.stub().returns({
       render: stubEctRender,
     });
 
     lambda = proxyquire('../src/index.js', {
-      'ect': stubEct,
+      ect: stubEct,
     });
   });
 

@@ -13,6 +13,15 @@
   },
   "author": "martin.bieth@precogs.com",
   "contributors": "pierre.bails@precogs.com",
+  "homepage": "https://github.com/Precogs-com/lambda-boilerplate",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Precogs-com/lambda-boilerplate"
+  },
+  "bugs": {
+    "url": "https://github.com/Precogs-com/lambda-boilerplate/issues",
+    "mail": ""
+  },
   "engines": {
     "node": ">=6.0.0"
   },
