@@ -1,6 +1,6 @@
 # <% @projectName %>
 
-## Requierements
+## Requirements
 
 ## Install
 

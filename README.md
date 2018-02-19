@@ -24,7 +24,7 @@ Default templates are stored in [template](./templates) folder.
 | hello-world | NodeJS | A simple hello world template with tests and lint |
 
 ### Use your own templates
-As lambda-boilerplate can be used as a CLI, you can defined your own templates directory path. You just have to export your templates directory path `LAMBDA_TEMPLATES_PATH` environment variable.
+As lambda-boilerplate can be used as a CLI, you can define your own templates directory path. You just have to export your templates directory path `LAMBDA_TEMPLATES_PATH` environment variable.
 
 ```
 $ export LAMBDA_TEMPLATES_PATH=/absolute/path/to/your/templates/directory

@@ -41,6 +41,7 @@ describe('Lambda boilerplate', () => {
     stubInquirer = sinon.stub(inquirer, 'prompt').resolves({
       'project-choice': 'template',
       'project-name': 'toto',
+      'project-dest': 'a/path',
     });
 
     stubEctRender = sinon.stub().returns('toto toto toto');

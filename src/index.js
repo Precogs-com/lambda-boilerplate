@@ -1,9 +1,10 @@
-#!/usr/bin/env node
-
 const inquirer = require('inquirer');
+const { PathPrompt } = require('inquirer-path');
 const fs = require('fs-extra');
 const path = require('path');
 const ECT = require('ect');
+
+inquirer.prompt.registerPrompt('path', PathPrompt);
 
 const validateDir = (dir) => {
   if (!fs.existsSync(dir)) {
@@ -63,6 +64,21 @@ const prompt = (lambdaPath, templateDir, name) => new Promise((resolve, reject) 
 
     const questions = [
       {
+        type: 'path',
+        name: 'project-dest',
+        message: 'Where would you like generate project?',
+        default: dest || '',
+        validate: (input) => {
+          if (fs.existsSync(input)) {
+            const pathStats = fs.statSync(input);
+            if (pathStats.isDirectory()) return true;
+
+            return (`<${input}> is not a directory`);
+          }
+          return (`<${input}> doesn't exist.`);
+        },
+      },
+      {
         name: 'project-choice',
         type: 'list',
         message: 'What project template would you like to generate?',
@@ -85,8 +101,9 @@ const prompt = (lambdaPath, templateDir, name) => new Promise((resolve, reject) 
       .then((answers) => {
         const projectChoice = answers['project-choice'];
         const projectName = answers['project-name'];
+        const projectDest = answers['project-dest'];
         const templatePath = path.join(src, projectChoice);
-        const projectPath = path.join(dest, projectName);
+        const projectPath = path.join(projectDest, projectName);
 
         fs.ensureDirSync(projectPath);
 
