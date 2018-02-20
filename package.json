@@ -1,6 +1,6 @@
 {
   "name": "lambda-boilerplate",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Generate a Lambda boilerplate. Make your own personnal templates in a easier way!",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha test/",
@@ -11,6 +11,7 @@
   "bin": {
     "lambda-boilerplate": "./bin/index.js"
   },
+  "main": "./src/index.js",
   "author": "martin.bieth@precogs.com",
   "contributors": "pierre.bails@precogs.com",
   "homepage": "https://github.com/Precogs-com/lambda-boilerplate",
