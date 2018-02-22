@@ -95,3 +95,5 @@ $ npm run test
 - Add more templates in different languages
 - Support ECT variables as parameters
 
+
+Inspired by [@harrietty](https://medium.com/northcoders/creating-a-project-generator-with-node-29e13b3cd309)
