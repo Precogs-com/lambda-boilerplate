@@ -1,6 +1,6 @@
 # Lambda Boilerplate
 
-[![dependencies Status](https://david-dm.org/Precogs-com/lambda-boilerplate/status.svg)](https://david-dm.org/Precogs-com/lambda-boilerplate) [![Build Status](https://travis-ci.org/Precogs-com/lambda-boilerplate.svg?branch=master)](https://travis-ci.org/Precogs-com/lambda-boilerplate)
+[![dependencies Status](https://david-dm.org/Precogs-com/lambda-boilerplate/status.svg)](https://david-dm.org/Precogs-com/lambda-boilerplate) [![Build Status](https://travis-ci.org/Precogs-com/lambda-boilerplate.svg?branch=master)](https://travis-ci.org/Precogs-com/lambda-boilerplate) [![Coverage Status](https://coveralls.io/repos/github/Precogs-com/lambda-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/Precogs-com/lambda-boilerplate?branch=master)
 
 ## Description
 
