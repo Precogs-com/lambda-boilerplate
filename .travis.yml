@@ -7,4 +7,5 @@ node_js:
 script:
   - npm run lint
   - npm run lint-test
-  - npm test
+  - npm test-travis
+after_script: "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"

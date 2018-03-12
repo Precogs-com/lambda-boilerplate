@@ -1,5 +1,7 @@
 # Lambda Boilerplate
 
+[![dependencies Status](https://david-dm.org/Precogs-com/lambda-boilerplate/status.svg)](https://david-dm.org/Precogs-com/lambda-boilerplate) [![Build Status](https://travis-ci.org/Precogs-com/lambda-boilerplate.svg?branch=master)](https://travis-ci.org/Precogs-com/lambda-boilerplate)
+
 ## Description
 
 Simple generator of Lambda boilerplate. You can either use predefined boilerplate (see list below), or add your owns.
