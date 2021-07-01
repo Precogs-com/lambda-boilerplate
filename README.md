@@ -89,6 +89,7 @@ You can test your code with:
 ```bash
 $ git clone git@github.com:Precogs-com/lambda-boilerplate.git
 $ cd lambda-boilerplate
+$ npm i
 $ npm run lint
 $ npm run test
 ```
